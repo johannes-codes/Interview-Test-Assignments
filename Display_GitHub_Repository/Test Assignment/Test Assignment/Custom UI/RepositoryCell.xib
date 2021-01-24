@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="176" id="cfN-gJ-lJV" customClass="RepositoryCell" customModule="Test_Assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="176"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cfN-gJ-lJV" id="fbE-hd-frJ">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="176"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ena-tL-kcc">
+                        <rect key="frame" x="15" y="12" width="384" height="152"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#Repository Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jba-IH-y2d">
+                                <rect key="frame" x="8" y="16" width="368" height="26.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#Repository Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Gb-uK-EP0">
+                                <rect key="frame" x="8" y="50.5" width="368" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="nwv-NC-yV7">
+                                <rect key="frame" x="8" y="106" width="368" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wo-eL-Wxp">
+                                        <rect key="frame" x="0.0" y="8.5" width="72.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#Watchers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elq-9i-kIC">
+                                        <rect key="frame" x="163" y="8.5" width="70" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#Forks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cB-bV-Cbe">
+                                        <rect key="frame" x="323.5" y="8.5" width="44.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#SHA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVR-al-4Zd">
+                                <rect key="frame" x="8" y="83.5" width="368" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="nwv-NC-yV7" firstAttribute="top" secondItem="pVR-al-4Zd" secondAttribute="bottom" constant="8" id="1PS-cl-LYy"/>
+                            <constraint firstItem="Jba-IH-y2d" firstAttribute="leading" secondItem="ena-tL-kcc" secondAttribute="leading" constant="8" id="4nd-ns-aAd"/>
+                            <constraint firstAttribute="bottom" secondItem="nwv-NC-yV7" secondAttribute="bottom" constant="12" id="5FV-1V-mo7"/>
+                            <constraint firstItem="nwv-NC-yV7" firstAttribute="leading" secondItem="ena-tL-kcc" secondAttribute="leading" constant="8" id="FVy-Hu-q93"/>
+                            <constraint firstAttribute="trailing" secondItem="Jba-IH-y2d" secondAttribute="trailing" constant="8" id="NL3-UQ-itL"/>
+                            <constraint firstAttribute="trailing" secondItem="nwv-NC-yV7" secondAttribute="trailing" constant="8" id="Vs5-Fi-1mw"/>
+                            <constraint firstAttribute="trailing" secondItem="8Gb-uK-EP0" secondAttribute="trailing" constant="8" id="XXN-U4-NxM"/>
+                            <constraint firstItem="8Gb-uK-EP0" firstAttribute="leading" secondItem="ena-tL-kcc" secondAttribute="leading" constant="8" id="gy4-FL-NJ8"/>
+                            <constraint firstItem="8Gb-uK-EP0" firstAttribute="top" secondItem="Jba-IH-y2d" secondAttribute="bottom" constant="8" id="kjK-J0-TSb"/>
+                            <constraint firstItem="pVR-al-4Zd" firstAttribute="top" secondItem="8Gb-uK-EP0" secondAttribute="bottom" constant="15" id="mQp-tt-Oh5"/>
+                            <constraint firstItem="Jba-IH-y2d" firstAttribute="top" secondItem="ena-tL-kcc" secondAttribute="top" constant="16" id="vNl-DP-F7G"/>
+                            <constraint firstItem="pVR-al-4Zd" firstAttribute="leading" secondItem="ena-tL-kcc" secondAttribute="leading" constant="8" id="xsC-f3-EKh"/>
+                            <constraint firstAttribute="trailing" secondItem="pVR-al-4Zd" secondAttribute="trailing" constant="8" id="zEX-FH-MEd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ena-tL-kcc" secondAttribute="bottom" constant="12" id="0n1-Tl-qyj"/>
+                    <constraint firstItem="ena-tL-kcc" firstAttribute="leading" secondItem="fbE-hd-frJ" secondAttribute="leading" constant="15" id="ShM-FZ-IAL"/>
+                    <constraint firstAttribute="trailing" secondItem="ena-tL-kcc" secondAttribute="trailing" constant="15" id="V0V-hm-VbF"/>
+                    <constraint firstItem="ena-tL-kcc" firstAttribute="top" secondItem="fbE-hd-frJ" secondAttribute="top" constant="12" id="yP0-3P-Iau"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="8Gb-uK-EP0" id="F0d-8f-dkz"/>
+                <outlet property="forksLabel" destination="0cB-bV-Cbe" id="u9k-Ba-sTE"/>
+                <outlet property="languageLabel" destination="3wo-eL-Wxp" id="KfH-FT-Lrm"/>
+                <outlet property="nameLabel" destination="Jba-IH-y2d" id="ALk-PN-HH8"/>
+                <outlet property="shaLabel" destination="pVR-al-4Zd" id="acW-TH-Isf"/>
+                <outlet property="watchersLabel" destination="elq-9i-kIC" id="Iz3-5u-Bvd"/>
+                <outlet property="wrapperView" destination="ena-tL-kcc" id="loP-tu-atl"/>
+            </connections>
+            <point key="canvasLocation" x="115.94202898550725" y="-137.27678571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
